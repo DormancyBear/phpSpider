@@ -8,12 +8,12 @@ require_once 'urlParser.php';
 class fileSave
 {
 	
-	public static function video($data)
+	public static function novel($data)
 	{
 		foreach ($data as $each) {
-			$resource = myCurl::request($each['swf']);
+			$content = myCurl::request($each['content']);
 
-			if (file_put_contents(__DIR__.'/../result/'.$each['title'].'.swf', $resource)) {
+			if (file_put_contents(__DIR__.'/../result/'.$each['title'].'.swf', $content)) {
 				echo "succeed to save ".$each['title'].".swf!\n";
 			} else {
 				echo "fail to save ".$each['title'].".swf!\n";
