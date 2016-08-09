@@ -1,9 +1,8 @@
 <?php
-/**
-* 使用 Client URL 库进行抓取
-*/
 
-class myCurl
+namespace Spider;
+
+class MyCurl
 {
 	// 执行一次 curl 请求
 	public static function request($url)

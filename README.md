@@ -4,7 +4,7 @@
 
 ### http://www.23wx.com/
 
-**Setup your spider(./spider/config.php)**
+**Setup your spider(config.php)**
 
 ```php
 return [
